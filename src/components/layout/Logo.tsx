@@ -15,7 +15,7 @@ export default function Logo() {
         scale: 1.1,
         rotate: 360,
       }}
-      transition={{ duration: 5, type: "spring" }}
+      transition={{ duration: 3, type: "spring" }}
     >
       <Link href={"/"} className="w-full h-full">
         <Image

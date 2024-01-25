@@ -9,6 +9,14 @@ import { langContext } from "@/context/langContext";
 import { TEXTS_HOME } from "@/languages/texts_home";
 // Components:
 import Logo from "./Logo";
+// Framer motion
+import { motion } from "framer-motion";
+// Icons:
+import {
+  GithubIcon,
+  TwitterIcon,
+  LinkedInIcon,
+} from "@/components/icons_svg/icons";
 
 interface CustomLinkProps {
   href: string;
@@ -60,11 +68,34 @@ export default function Header() {
           className="w-max h-auto mr-4 inline-block"
         />
       </nav>
-      <nav>
-        <Link href={"/"}>RS</Link>
-        <Link href={"/"}>RS</Link>
-        <Link href={"/"}>RS</Link>
-        <Link href={"/"}>RS</Link>
+      <nav className="flex items-center justify-center">
+        <motion.a
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mr-3"
+          href="https://github.com/AgusAstuDev"
+          target="_blank"
+        >
+          <GithubIcon className={""}></GithubIcon>
+        </motion.a>
+        <motion.a
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mr-3"
+          href="https://twitter.com/AgusAstudillo97"
+          target="_blank"
+        >
+          <TwitterIcon className={""}></TwitterIcon>
+        </motion.a>
+        <motion.a
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mr-3"
+          href="https://www.linkedin.com/in/agustin-ezequiel-astudillo/"
+          target="_blank"
+        >
+          <LinkedInIcon className={""}></LinkedInIcon>
+        </motion.a>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />
