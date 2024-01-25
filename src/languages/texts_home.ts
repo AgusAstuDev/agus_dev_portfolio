@@ -1,8 +1,14 @@
 export const TEXTS_HOME = {
   es: {
-    title: "Hola mundo",
+    home: "Inicio",
+    about: "Sobre mí",
+    experience: "Experiencia",
+    contact: "Contacto",
   },
   en: {
-    title: "Hello world",
+    home: "Home",
+    about: "About",
+    experience: "Experience",
+    contact: "Contact",
   },
 };

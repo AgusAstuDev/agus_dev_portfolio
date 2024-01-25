@@ -5,21 +5,19 @@ import { LangProvider } from "@/context/langContext";
 // Styles:
 import "@/styles/globals.css";
 // Fonts:
-import { Roboto } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
-const roboto = Roboto({
-  weight: ["400"],
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--roboto",
-  display: "swap",
+  variable: "--font-montserrat",
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={`${roboto.variable}`}>
+    <main className={`${montserrat.variable} font-montserrat`}>
       <LangProvider locale={pageProps.locale} locales={pageProps.locales}>
         <Component {...pageProps} />
       </LangProvider>
-    </div>
+    </main>
   );
 }

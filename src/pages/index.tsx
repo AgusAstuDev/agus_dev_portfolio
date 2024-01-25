@@ -6,7 +6,7 @@ export { getStaticProps } from "@/tools/getStaticProps";
 
 export default function Home() {
   return (
-    <PageLayout title="Title page">
+    <PageLayout>
       <Header />
     </PageLayout>
   );
