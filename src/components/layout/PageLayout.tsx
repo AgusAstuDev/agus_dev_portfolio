@@ -12,9 +12,9 @@ interface Props {
 }
 
 export default function PageLayout({
-  title = "Agus Astu Dev",
+  title = "AgusAstu Dev",
   description = "Frontend developer",
-  image = "/images/next.svg",
+  image = "/favicon.png",
   children,
 }: Props) {
   return (
@@ -23,11 +23,11 @@ export default function PageLayout({
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta property="og:site_name" content="New page" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <meta property="og:image" content={image} />
         <meta property="og:image:width" content="1920" />
         <meta property="og:image:height" content="1080" />
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:type" content="image/png" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
       </Head>
