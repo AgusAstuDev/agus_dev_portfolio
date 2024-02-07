@@ -12,7 +12,7 @@ interface Props {
 }
 
 export default function PageLayout({
-  title = "AgusAstu Dev",
+  title = "AgusAstuDev",
   description = "Frontend developer",
   image = "/favicon.png",
   children,
