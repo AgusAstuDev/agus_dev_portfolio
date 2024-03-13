@@ -10,9 +10,7 @@ export { getStaticProps } from "@/tools/getStaticProps";
 export default function Home() {
   return (
     <PageLayout>
-      <Header />
       <HomeInfo />
-      <Footer />
       <HireMe />
     </PageLayout>
   );

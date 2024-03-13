@@ -395,7 +395,7 @@ export const CircularText = ({ className, ...rest }) => (
     width="100%"
     height="300"
     viewBox="0 0 1024 1024"
-    enable-background="0 0 1024 1024"
+    enableBackground="0 0 1024 1024"
     xmlSpace="preserve"
     className={`w-full h-auto ${className}`}
     {...rest}

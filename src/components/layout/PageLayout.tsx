@@ -1,6 +1,10 @@
 // React-Next:
 import React from "react";
 import Head from "next/head";
+import { useRouter } from "next/router";
+// Components:
+import Header from "./Header";
+import Footer from "./Footer";
 
 // Interface:
 interface Props {
@@ -17,10 +21,19 @@ export default function PageLayout({
   image = "/favicon.png",
   children,
 }: Props) {
+  const router = useRouter();
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>
+          {title}{" "}
+          {router.asPath == "/"
+            ? ""
+            : `| ${
+                router.asPath.substring(1)[0].toUpperCase() +
+                router.asPath.substring(2)
+              }`}
+        </title>
         <meta name="description" content={description} />
         <meta property="og:site_name" content="New page" />
         <link rel="icon" href="/favicon.png" />
@@ -31,7 +44,11 @@ export default function PageLayout({
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
       </Head>
-      <main>{children}</main>
+      <main>
+        <Header />
+        {children}
+        <Footer />
+      </main>
     </>
   );
 }
