@@ -12,6 +12,7 @@ export const TEXTS_HOME = {
     resumeHref: "/Astudillo_Agustin_E.pdf",
     footer1: "Todos los derechos reservados",
     footer2: ["Desarrollado con", "por AgusAstuDev"],
+    hireMe: "Contáctame",
   },
   en: {
     home: "Home",
@@ -26,5 +27,6 @@ export const TEXTS_HOME = {
     resumeHref: "/Astudillo_Agustin_E.pdf",
     footer1: "All Rights Reserved",
     footer2: ["Developed with", "by AgusAstuDev"],
+    hireMe: "Contact me",
   },
 };
