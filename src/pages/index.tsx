@@ -2,14 +2,17 @@
 import PageLayout from "@/components/layout/PageLayout";
 import HomeInfo from "@/components/home/HomeInfo";
 import HireMe from "@/components/home/HireMe";
+import GeneralWrapper from "@/components/common/GeneralWrapper";
 // Exports:
 export { getStaticProps } from "@/tools/getStaticProps";
 
 export default function Home() {
   return (
     <PageLayout>
-      <HomeInfo />
-      <HireMe />
+      <GeneralWrapper>
+        <HomeInfo />
+        <HireMe />
+      </GeneralWrapper>
     </PageLayout>
   );
 }

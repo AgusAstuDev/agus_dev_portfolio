@@ -4,7 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const container = {
-  hidden: { opacity: 1, scale: 0 },
   visible: {
     opacity: 1,
     scale: 1,

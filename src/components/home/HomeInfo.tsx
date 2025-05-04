@@ -1,7 +1,6 @@
 // React-Next:
 import React from "react";
 import { useContext } from "react";
-import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 // Context:
@@ -29,7 +28,6 @@ export default function HomeInfo() {
   const { locale } = useContext(langContext);
   const { title1, title2, paragraph, resume, resumeHref, contact } =
     TEXTS_HOME[locale];
-  const arrayTexts = [title1, title2];
 
   return (
     <div className="w-full h-auto max-h-[90vh] flex justify-around items-center overflow-hidden">
@@ -44,7 +42,11 @@ export default function HomeInfo() {
       </div>
       <div className="w-1/2 flex flex-col items-center self-center max-w-[720px]">
         <AnimatedText
-          arrayTexts={arrayTexts}
+          arrayTexts={[title1]}
+          className="w-full m-auto flex flex-wrap text-dark font-bold text-6xl text-left"
+        />
+        <AnimatedText
+          arrayTexts={[title2]}
           className="w-full m-auto flex flex-wrap text-dark font-bold text-6xl text-left"
         />
         <motion.p

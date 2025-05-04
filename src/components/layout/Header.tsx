@@ -30,11 +30,11 @@ const CustomLink = ({ href, text, className }: CustomLinkProps) => {
   return (
     <Link href={href} className={`${className} relative group `}>
       {text}
-      <span
+      <div
         className={`absolute h-[2px] bg-dark inline-block left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
           router.asPath === href ? "w-full" : "w-0"
         }`}
-      ></span>
+      />
     </Link>
   );
 };
@@ -43,7 +43,7 @@ export default function Header() {
   const { locale } = useContext(langContext);
   const { home, about, experience, contact } = TEXTS_HOME[locale];
   return (
-    <header className="w-full px-32 py-8 font-medium flex justify-between items-center">
+    <header className="w-full max-w-[1400px] px-[20px] mx-auto py-8 font-medium flex justify-between items-center">
       <nav>
         <CustomLink
           href={"/"}
