@@ -22,17 +22,20 @@ export default function PageLayout({
   children,
 }: Props) {
   const router = useRouter();
+
+  const capitalizarRuta = (path: string) => {
+    if (path === "/") return "";
+    const cleanedPath = path.substring(1); // Elimino el slash inicial
+    return cleanedPath.charAt(0).toUpperCase() + cleanedPath.slice(1);
+  };
+
   return (
     <>
       <Head>
         <title>
-          {title}{" "}
-          {router.asPath == "/"
-            ? ""
-            : `| ${
-                router.asPath.substring(1)[0].toUpperCase() +
-                router.asPath.substring(2)
-              }`}
+          {`${title}${
+            router.asPath === "/" ? "" : " | " + capitalizarRuta(router.asPath)
+          }`}
         </title>
         <meta name="description" content={description} />
         <meta property="og:site_name" content="New page" />

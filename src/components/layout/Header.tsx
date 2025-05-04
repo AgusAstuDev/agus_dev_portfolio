@@ -27,8 +27,6 @@ interface CustomLinkProps {
 const CustomLink = ({ href, text, className }: CustomLinkProps) => {
   const router = useRouter();
 
-  console.log("router" + router.asPath);
-
   return (
     <Link href={href} className={`${className} relative group `}>
       {text}
