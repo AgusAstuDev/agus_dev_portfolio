@@ -19,8 +19,8 @@ export const TEXTS_HOME = {
     about: "About",
     experience: "Experience",
     contact: "Contact",
-    title1: "Systems Engineering Student.",
-    title2: "Front-end Developer.",
+    title1: "Web Developer",
+    title2: "Systems Engineering Student",
     paragraph:
       "My focused approach on deep understanding of computer systems, driven by my academic background, professional experience, and passion for technology, reflects an effective contribution to challenging and dynamic projects. I excel in adapting to diverse technologies to achieve a functional, modern, robust, and high-performance product.",
     resume: "Resume",
