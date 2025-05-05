@@ -801,3 +801,46 @@ export const LinkArrow = ({ className, ...rest }) => (
     />
   </svg>
 );
+
+export const HambIcon = ({ className, ...rest }) => (
+  <svg
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <line
+      x1="5"
+      y1="7"
+      x2="19"
+      y2="7"
+      stroke="#000000"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <line
+      x1="5"
+      y1="12"
+      x2="19"
+      y2="12"
+      stroke="#000000"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <line
+      x1="5"
+      y1="17"
+      x2="19"
+      y2="17"
+      stroke="#000000"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);

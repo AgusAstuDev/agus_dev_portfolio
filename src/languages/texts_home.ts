@@ -4,8 +4,8 @@ export const TEXTS_HOME = {
     about: "Sobre mí",
     experience: "Experiencia",
     contact: "Contacto",
-    title1: "Desarrollador Web.",
-    title2: "Estudiante de Ingeniería en Sistemas.",
+    title1: "Desarrollador Web",
+    title2: "Estudiante de Ingeniería en Sistemas",
     paragraph:
       "Mi enfoque centrado en la comprensión profunda de los sistemas informáticos, impulsado por mi carrera académica, trayectoria laboral y pasión por la tecnología, reflejan un aporte efectivo en proyectos desafiantes y dinámicos, logrando adaptarme a diversas tecnologías para lograr un producto funcional, moderno, robusto, y de alto rendimiento.",
     resume: "Currículum",

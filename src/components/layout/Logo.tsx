@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 export default function Logo() {
   return (
     <motion.div
-      className="w-24 h-auto"
+      className="w-[55px] lg:w-[85px] h-auto"
       whileHover={{
         scale: 1.1,
         rotate: 360,

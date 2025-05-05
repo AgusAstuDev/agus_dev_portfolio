@@ -9,7 +9,7 @@ export { getStaticProps } from "@/tools/getStaticProps";
 export default function Home() {
   return (
     <PageLayout>
-      <GeneralWrapper>
+      <GeneralWrapper className="mt-[70px] mb-[50px] lg:mb-0 lg:mt-0">
         <HomeInfo />
         <HireMe />
       </GeneralWrapper>

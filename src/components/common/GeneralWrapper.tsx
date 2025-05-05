@@ -8,7 +8,9 @@ export default function GeneralWrapper({
   className = "",
 }: GeneralWrapperProps) {
   return (
-    <section className={`w-full max-w-[1400px] px-[20px] mx-auto ${className}`}>
+    <section
+      className={`w-full max-w-[1300px] px-[20px] mx-auto lg:mt-0 bg-light ${className}`}
+    >
       {children}
     </section>
   );

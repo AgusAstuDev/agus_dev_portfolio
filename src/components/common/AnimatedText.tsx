@@ -33,10 +33,13 @@ export default function AnimatedText({ arrayTexts, className }: Props) {
       variants={container}
       initial="hidden"
       animate="visible"
-      className="w-full m-auto py-2 flex flex-col items-center justify-center text-center overflow-hidden mb-[30px]"
+      className="w-full m-auto flex flex-col items-center justify-center text-center overflow-hidden"
     >
       {arrayTexts.map((text, index) => (
-        <h1 key={index} className={className}>
+        <h1
+          key={index}
+          className={`w-full m-auto flex flex-wrap text-center justify-center lg:justify-start lg:text-left ${className}`}
+        >
           {text.split(" ").map((word, idx) => (
             <motion.span
               variants={item}

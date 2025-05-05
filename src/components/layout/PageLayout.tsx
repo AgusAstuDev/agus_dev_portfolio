@@ -4,6 +4,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 // Components:
 import Header from "./Header";
+import HeaderMobile from "./HeaderMobile";
 import Footer from "./Footer";
 
 // Interface:
@@ -49,6 +50,7 @@ export default function PageLayout({
       </Head>
       <main>
         <Header />
+        <HeaderMobile />
         {children}
         <Footer />
       </main>

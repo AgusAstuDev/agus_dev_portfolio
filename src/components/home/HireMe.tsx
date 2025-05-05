@@ -12,7 +12,7 @@ export default function HireMe() {
   const { locale } = useContext(langContext);
   const { hireMe } = TEXTS_HOME[locale];
   return (
-    <div className="fixed left-4 bottom-4 flex items-center justify-center overflow-hidden">
+    <div className="hidden fixed left-4 bottom-4 lg:flex items-center justify-center overflow-hidden">
       <div className="w-48 h-auto flex items-center justify-center relative">
         <CircularText className={"fill-dark animate-spin-slow"} />
         <Link
